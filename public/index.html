@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>Marissa Vega Web Developer Portfolio</title>
+
+    <link href="assets/css/hover_pack.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/colors/color-74c9be.css" rel="stylesheet">    
+    <link href="assets/css/animations.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    
+    <!-- JavaScripts needed at the beginning
+    ================================================== -->
+    <script type="text/javascript" src="http://alvarez.is/demo/marco/assets/js/twitterFetcher_v10_min.js"></script>
+
+    <!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+    <script type="text/javascript">
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+    
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 11,
+                
+                scrollwheel: false,
+
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+                // How you would like to style the map. 
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [	{		featureType:'water',		stylers:[{color:'#74c9be'},{visibility:'on'}]	},{		featureType:'landscape',		stylers:[{color:'#f2f2f2'}]	},{		featureType:'road',		stylers:[{saturation:-100},{lightness:45}]	},{		featureType:'road.highway',		stylers:[{visibility:'simplified'}]	},{		featureType:'road.arterial',		elementType:'labels.icon',		stylers:[{visibility:'off'}]	},{		featureType:'administrative',		elementType:'labels.text.fill',		stylers:[{color:'#444444'}]	},{		featureType:'transit',		stylers:[{visibility:'off'}]	},{		featureType:'poi',		stylers:[{visibility:'off'}]	}]
+            };
+
+            // Get the HTML DOM element that will contain your map 
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
+
+            // Create the Google Map using out element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+        }
+    </script>
+    
+    
+    <!-- Main Jquery & Hover Effects. Should load first -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/hover_pack.js"></script>
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+	<! ========== HEADERWRAP ==================================================================================================== 
+	=============================================================================================================================>
+    <div id="headerwrap">
+    	<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2 mt">
+					<h1 class="animation slideDown">Hello, I'm Marissa Vega <br>I adore creating beautiful, stylish websites.</h1>
+    				<p class="mt"><a href="vega_resume.pdf" type="button" class="btn btn-cta btn-lg">VIEW RESUME</a></p>
+				</div>
+				
+			</div><!-- /row -->
+    	</div><!-- /container -->
+    </div> <!-- /headerwrap -->
+
+	<! ========== PORTFOLIO SECTION ============================================================================================= 
+	=============================================================================================================================>    
+	<div class="container">
+		<div class="row mt centered ">
+			<div class="col-lg-4 col-lg-offset-4">
+				<h3>Portfolio</h3>
+				<hr>
+			</div>
+		</div><!-- /row -->
+		<div class="row mt centered">	
+			<div class="col-lg-4 desc">
+				<a class="b-link-fade b-animate-go" href="/juggernaut"><img width="350" src="assets/img/portfolio/juggernautfitness.png" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Juggernaut Fitness</h4>
+					  	<p class="b-from-right b-animate b-delay03">View Details</p>
+					</div>
+				</a>
+				<p>Juggernaut Fitness - <i class="fa fa-heart-o"></i></p>
+			</div>
+			<div class="col-lg-4 desc">
+				<a class="b-link-fade b-animate-go" href="http://insurejoy.com"><img width="350" src="assets/img/portfolio/insurejoy.png" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Insure Joy</h4>
+					  	<p class="b-from-right b-animate b-delay03">View Details</p>
+					</div>
+				</a>
+				<p>Insure Joy - <i class="fa fa-heart-o"></i></p>
+			</div>
+			<div class="col-lg-4 desc">
+				<a class="b-link-fade b-animate-go" href="/national_parks.php"><img width="350" src="assets/img/portfolio/nationalparks.png" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">National Parks</h4>
+					  	<p class="b-from-right b-animate b-delay03">View Details</p>
+					</div>
+				</a>
+				<p>National Parks - <i class="fa fa-heart-o"></i></p>
+			</div>
+		</div><!-- /row -->
+		<div class="row mt centered">	
+			<div class="col-lg-4 desc">
+				<a class="b-link-fade b-animate-go" href="/mediamoolah/demo.html"><img width="350" src="assets/img/portfolio/mediamoolah.png" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Media Moolah</h4>
+					  	<p class="b-from-right b-animate b-delay03">View Details</p>
+					</div>
+				</a>
+				<p>Media Moolah - <i class="fa fa-heart-o"></i></p>
+			</div>
+			<div class="col-lg-4 desc">
+				<a class="b-link-fade b-animate-go" href="/zumba"><img width="350" src="assets/img/portfolio/juggernautz.png" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Juggernaut Z</h4>
+					  	<p class="b-from-right b-animate b-delay03">View Details</p>
+					</div>
+				</a>
+				<p>Juggernaut Z - <i class="fa fa-heart-o"></i></p>
+			</div>
+			<div class="col-lg-4 desc">
+				<a class="b-link-fade b-animate-go" href="/hardgainerz"><img width="350" src="assets/img/portfolio/hardgainerz.png" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Hard Gainerz</h4>
+					  	<p class="b-from-right b-animate b-delay03">View Details</p>
+					</div>
+				</a>
+				<p>Hard Gainerz - <i class="fa fa-heart-o"></i></p>
+			</div>
+			<div class="col-lg-4 desc">
+				<a class="b-link-fade b-animate-go" href="/whackamole"><img width="350" src="assets/img/portfolio/whackamole.png" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Jurassic Park Whack-A-Mole</h4>
+					  	<p class="b-from-right b-animate b-delay03">View Details</p>
+					</div>
+				</a>
+				<p>Jurassic Park Whack-A-Mole - <i class="fa fa-heart-o"></i></p>
+			</div>
+			
+		</div><!-- /row -->
+
+		<div class="row mt centered">
+			<div class="col-lg-4 col-lg-offset-4">
+    			<a href="vega_resume.pdf" type="button" class="btn btn-theme btn-lg">VIEW RESUME</a>
+			</div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+	
+	<! ========== BLACK SECTION ================================================================================================= 
+	=============================================================================================================================>    
+	<div id="black">
+		<div class="container">
+			<div class="row mt centered">
+				<div class="col-lg-4 col-lg-offset-4">
+					<h3>Objective</h3>
+					<hr>
+				</div><!-- /col-lg-4 -->
+			</div><!-- /row -->
+			
+			<div class="row mt">
+				<div class="col-lg-8 col-lg-offset-2">
+					<p>I am interested in a secure work environment with good pay and that places emphasis on
+					mentorship and personal growth. I'm looking for a position where I can be a team player as I enjoy
+					taking orders and delivering a fantastic finished product.</p>
+				</div><! --/col-lg-8 -->
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /black -->
+
+	<! ========== FEATURED ICONS ================================================================================================ 
+	=============================================================================================================================>    
+    <div class="container">
+    	<div class="row mt centered">
+				<div class="col-lg-4 col-lg-offset-4">
+					<h3>Skills</h3>
+					<hr>
+				</div><!-- /col-lg-4 -->
+			</div><!-- /row -->
+    	<div class="row mt">
+    		<div class="col-lg-4 centered si">
+    			<i class="fa fa-eye"></i>
+    			<h4>Bootstrap/HTML5/CSS</h4>
+    		</div>
+    		<div class="col-lg-4 centered si">
+    			<i class="fa fa-code-fork"></i>
+    			<h4>Version Control with Git</h4>
+    		</div>
+    		<div class="col-lg-4 centered si">
+    			<i class="fa fa-code"></i>
+    			<h4>PHP</h4>
+    		</div>    	
+
+    		<div class="col-lg-4 centered si">
+    			<i class="fa fa-coffee"></i>
+    			<h4>Javascript/jQuery</h4>
+    		</div>
+    		<div class="col-lg-4 centered si">
+    			<i class="fa fa-cogs"></i>
+    			<h4>Laravel</h4>
+    		</div>
+    		<div class="col-lg-4 centered si">
+    			<i class="fa fa-database"></i>
+    			<h4>MySQL/Sequel Pro</h4>
+    		</div>    	
+    	</div><!-- /row -->
+    </div><!-- /container -->
+
+	<! ========== TESTIMONIAL CAROUSEL ========================================================================================== 
+	=============================================================================================================================>    
+
+	<!-- <div class="container">
+    	<div class="row mt">
+    		<div class="col-lg-4 col-lg-offset-4 centered">
+    			<h3>Honest Testimonials</h3>
+    			<hr>
+    		</div>
+    	</div><! --/row -->
+	
+		<!-- <div class="row mt">
+			<div class="col-lg-8 col-lg-offset-2 centered">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">				
+					<!-- Wrapper for slides -->
+					<!-- <div class="carousel-inner">
+						<div class="item active">
+						  <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</h2>
+						  <h5>Paul Morrison - BlackTie.co</h5>
+						</div>
+						
+						<div class="item">
+						  <h2>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h2>
+						  <h5>Mike Wellington - BlackTie.co</h5> -->
+						<!-- </div>
+					</div><!-- /carousel-inner -->
+				
+				<!-- </div><! --/carousel-example -->		
+			<!-- </div> /col-lg-8 --> 
+		<!-- </div><! --/row -->
+	<!-- </div>  --><!-- /container --> 
+	
+	<! ========== CALL TO ACTION BAR =============================================================================================== 
+	=============================================================================================================================>    
+	<div id="cta-bar">
+		<div class="container">
+			<div class="row centered">
+				<a href="mailto:marissavega90@gmail.com"><h4>Are You Ready For The Next Step?</h4></a>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /cta-bar -->
+	
+	<! ========== FOOTER ======================================================================================================== 
+	=============================================================================================================================>    
+	
+	<div id="f">
+		<div class="container">
+			<div class="row">
+				<!-- ADDRESS -->
+				<div class="col-lg-3">
+					<h4>Marissa Vega</h4>
+					<p>
+						<i class="fa fa-mobile"></i> 210-251-0279<br/>
+						<i class="fa fa-envelope-o"></i> marissavega90@gmail.com
+					</p>
+				</div><! --/col-lg-3 -->
+				
+				<!-- TWEETS -->
+				<div class="col-lg-3">
+					<h4>Find Me</h4>
+					<!-- <div id="showtweets"></div>
+						<script>
+							twitterFetcher.fetch('258157205101088768', 'showtweets', 2, true, false, false, '', false, handleTweets, false);
+							
+							function handleTweets(tweets){
+							    var x = tweets.length;
+							    var n = 0;
+							    var element = document.getElementById('showtweets');
+							    var html = '<ul>';
+							    while(n < x) {
+							      html += '<li>' + tweets[n] + '</li>';
+							      n++;
+							    }
+							    html += '</ul>';
+							    element.innerHTML = html;
+							}					
+						</script>
+					<p>Follow us <b>@Alvrz_is</b></p> -->
+					<a href="https://www.facebook.com/mvleal90"><i class="fa fa-facebook-square fa-4x"></i></a>
+					<a href="https://www.linkedin.com/in/marissavega90"><i class="fa fa-linkedin-square fa-4x"></i></a>
+					<a href="https://twitter.com/marissavega90"><i class="fa fa-twitter-square fa-4x"></i></a>
+					<a href="https://github.com/marissavega90"><i class="fa fa-github-square fa-4x"></i></a>
+				</div><!-- /col-lg-3 -->
+				
+				<!-- LATEST POSTS -->
+				<!-- <div class="col-lg-3">
+					<h4>Latest Posts</h4>
+					<p>
+						<i class="fa fa-angle-right"></i> A post with an image<br/>
+						<i class="fa fa-angle-right"></i> Other post with a video<br/>
+						<i class="fa fa-angle-right"></i> A full width post<br/>
+						<i class="fa fa-angle-right"></i> We talk about something nice<br/>
+						<i class="fa fa-angle-right"></i> Yet another single post<br/>
+					</p>
+				</div> --><!-- /col-lg-3 -->
+				
+				<!-- NEW PROJECT -->
+				<!-- <div class="col-lg-3">
+					<h4>New Project</h4>
+					<a href="#"><img class="img-responsive" src="assets/img/portfolio/port03.jpg" alt="" /></a>
+				</div> --><!-- /col-lg-3 -->
+				
+				
+			</div><! --/row -->
+		</div><!-- /container -->
+	</div><!-- /f -->
+	
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina.js"></script>
+
+
+  	<script>
+		$(window).scroll(function() {
+			$('.si').each(function(){
+			var imagePos = $(this).offset().top;
+	
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$(this).addClass("slideUp");
+				}
+			});
+		});
+	</script>    
+
+
+
+  
+  </body>
+</html>

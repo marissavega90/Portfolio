@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Whack-A-Mole</title>
+
+
+	<style type="text/css">
+
+	*
+		#gameContainer {
+
+			/*border: 1px solid;*/
+			/*border-color: black;*/
+		    width: 600px;
+		    height: 600px;
+		    /*background-color: white;*/
+		    /*color: #FFF;*/
+		    padding-right: 20px;
+		    padding-top: 20px;
+		    margin: 10px;
+
+		}
+
+		.mole {
+
+			/*border: 1px solid;*/
+			/*border-color: black;*/
+			width: 150px;
+			height: 150px;
+			/*background-color: white;*/
+			padding: 10px;
+			margin: 10px;
+			float: right;
+			background: no-repeat;
+
+		}
+
+		.moleRandom {
+
+			background-image: url(img/trexmole.png);
+
+
+		}
+
+
+		body {
+
+			background-color: black;
+			cursor: url(img/torchcursor.png), default;
+
+		}
+
+		img {
+
+			width: 40%;
+			height: 40%;
+			margin-left: 30%;
+		}
+
+		h5 {
+
+			color: white;
+			text-align: center;
+		}
+
+		#score {
+
+			text-align: center;
+			color: white;
+		}
+
+		.raptorize {
+
+			height: 20px;
+		}
+
+		button {
+
+			background-color: black;
+			color: white;
+			margin-left: 46%;
+		}
+
+
+	</style>
+</head>
+<body>
+	<header><img src="img/header.jpg"></img></header>
+	<button id="startButton">Turn the light off!</button>
+	<h5><em>Score: </em><span id="score"></span></h5>
+	<div align="center">
+		<div id="gameContainer" >
+			<div class="mole">
+				<a class="play-light01"></a>
+			</div>
+			<div class="mole">
+				<a class="play-light01"></a>
+			</div>
+			<div class="mole">
+				<a class="play-light01"></a>
+			</div>
+
+			<div class="mole">
+				<a class="play-light01"></a>
+			</div>
+			<div class="mole">
+				<a class="play-light01"></a>
+			</div>
+			<div class="mole">
+				<a class="play-light01"></a>
+			</div>
+
+			<div class="mole">
+				<a class="play-light01"></a>
+			</div>
+			<div class="mole">
+				<a class="play-light01"></a>
+			</div>
+			<div class="mole">
+				<a class="play-light01"></a>
+			</div>
+		</div>
+			<audio class="audio-player" id="light01" src="sounds/lightoff01.mp3"></audio>
+			<audio class="audio-player" id="light02" src="sounds/lightoff02.mp3"></audio>
+			<audio class="audio-player" id="trex" src="sounds/trex.mp3"></audio>
+	</div>
+
+
+	<!-- Javascript here for div containers -->
+
+	
+	
+
+	<script src="js/jquery.min.js"></script>
+
+	<!-- Raptorize the page to end the game -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<script>!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>')</script>
+	<script src="js/jquery.raptorize.1.0.js"></script>
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('.button').raptorize({
+				'enterOn' : 'timer',
+				'delayTime' : 1000
+			});
+		});
+	</script>	
+
+	<script type="text/javascript">
+
+	var score = 0;
+	
+
+	$('document').ready(function() {
+
+		// Start buttom activates the game
+
+		// var startTimer(function())
+		// $( "#startButton" ).on( "click", function() {
+		//   	alert( $( this ).text() );
+		// 	});
+		// $( "#startButton" ).trigger( "click" );
+
+	 	setInterval(function() {
+
+	 		var moleKey = Math.floor(Math.random() * 10)
+
+			var moles = $('#gameContainer').children();
+
+			var selectedMole = $(moles[moleKey]).addClass('moleRandom');
+
+				setTimeout(function(){
+					$(selectedMole).removeClass('moleRandom');
+
+				}, 1000);
+
+			$(selectedMole).click(function(event) {
+				$(this).hide();
+				score++;
+				$("#score").text(score);
+
+					var sounds = ['#light01', '#light02', '#trex'];
+					var index = (Math.floor(Math.random()*3));
+
+				$(sounds[index]).trigger("play");
+
+				
+
+			})
+
+	 	}, 4000);
+
+
+ 			$(gameEnd).setTimeout(function() {
+
+      				<!-- Raptorize the page to end the game -->
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+				<script>!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>')</script>
+				<script src="js/jquery.raptorize.1.0.js"></script>
+				<script type="text/javascript">
+					$(window).load(function() {
+						$('.button').raptorize({
+							'enterOn' : 'timer',
+							'delayTime' : 15000
+				});
+	 		})
+
+    });
+
+
+
+	</script>
+
+	
+	
+	
+</body>
+</html>

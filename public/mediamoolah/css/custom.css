@@ -1,0 +1,80 @@
+.navbar-purple {
+	background-color: #5C4383;
+	border-radius: 0px;
+	width: 100%;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+}
+
+body {
+	background-color: #E9EAED;
+	overflow-x: ;
+}
+
+.white {
+	color: white;
+}
+
+.navbar-default .navbar-collapse {
+	border-color: #5C4383;
+}
+
+.navbar-default {
+	border-color: #5C4383;
+}
+
+input .form-control {
+	width: 400px;
+}
+
+.navbar-form .navbar-left {
+	width: 400px;
+	padding: 0px;
+}
+
+.navbar-form .form-control {
+	width: 400px;
+}
+
+.navbar-form {
+	padding-left: 0px;
+}
+
+.grey {
+	background-color: #E9EAED;
+	color: gray;
+}
+
+.white-box {
+	background-color: white;
+	color: gray;
+	padding: 15px;
+}
+
+.name-pad {
+	padding-bottom: 15px;
+}
+
+.mmicon {
+	height: 110%;
+	width: 60%;
+	padding: 0px;
+}
+
+a.navbar-brand {
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	height: 35px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white;
+}
+
+a {
+	color: #5C4383;
+}
